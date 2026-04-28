@@ -1,0 +1,11 @@
+# Variables de entorno
+.env
+.env.local
+.env.production
+
+# Dependencias
+node_modules/
+
+# Reportes de seguridad generados
+reports/dependency-check/
+reports/zap/

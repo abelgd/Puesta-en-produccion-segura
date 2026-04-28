@@ -1,0 +1,6 @@
+projectKey=Vet-clinic
+serverUrl=http://localhost:9000
+serverVersion=26.4.0.121862
+dashboardUrl=http://localhost:9000/dashboard?id=Vet-clinic
+ceTaskId=7da0f04d-96b1-43c3-8064-4e23c66340f2
+ceTaskUrl=http://localhost:9000/api/ce/task?id=7da0f04d-96b1-43c3-8064-4e23c66340f2
